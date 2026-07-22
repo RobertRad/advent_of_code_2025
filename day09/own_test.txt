@@ -1,0 +1,56 @@
+1,0
+3,0
+3,1
+6,1
+6,0
+8,0
+8,4
+6,4
+6,3
+4,3
+4,4
+1,4
+
+; This diagram:
+; .X.X..X.X.
+; ...X..X...
+; ..........
+; ....X.X...
+; .X..X.X.X.
+
+; Leads to this path:
+; .XXX..XXX.
+; .X.XXXX.X.
+; .X......X.
+; .X..XXX.X.
+; .XXXX.XXX.
+
+; Beware that the biggest one is not:
+; .OOOOOOOO.
+; .OOOOOOOO.
+; .OOOOOOOO.
+; .OOOOOOOO.
+; .OOOOOOOO.
+
+; It is:
+; .OOO..X.X.
+; .OOO..X...
+; .OOO......
+; .OOOX.X...
+; .OOOX.X.X.
+
+; Or this:
+; .X.X..OOO.
+; ...X..OOO.
+; ......OOO.
+; ....X.OOO.
+; .X..X.OOO.
+
+; The tiles are:
+; { x: 3, y: 0 } & { x: 1, y: 4 } 
+; or
+; { x: 6, y: 0 } & { x: 8, y: 4 }
+; or
+; { x: 8, y: 0 } & { x: 6, y: 4 }
+
+; So, the result is 3*5 = 15. And not 40.
